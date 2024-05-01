@@ -1,7 +1,12 @@
 .topnav {
-    display: flexbox;
     align-items: center;
     align-content: center;
     table, td, th {border: 1px solid}
-    table {width: 100%; border-collapse: collapse; margin-right: 1%;}
+    table {width: 50%; 
+        border-radius: 10px; 
+        text-align: center;
+        border-collapse: collapse; 
+        float: right;
+        margin-top: -35px
+        ;}
 }
