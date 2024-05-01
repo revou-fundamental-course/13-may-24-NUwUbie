@@ -16,8 +16,9 @@
                         font-family: Arial, sans-serif;
                     }
             .name   {   input[type=text] {
-                        padding: 12px 20px;
-                        margin: 8px 0;
+                        padding: 4px 5px;
+                        margin-top: -5px;
+                        margin-bottom: 5px;
                         border-radius: 4px;
                         box-sizing: border-box;
                         border: 3px solid #ccc;
@@ -28,7 +29,6 @@
                         border: 3px solid #555;}
                     }
             .date   {   input [type=date] {
-                        padding: 12px 20px;
                         margin: 8px 0;
                         border-radius: 4px;
                         box-sizing: border-box;
@@ -39,16 +39,15 @@
                         input[type=text]:focus {
                         border: 3px solid #555;}
                     }
-                    label {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+label {
+    width: 80px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
 }
 
-input {
-  height: 20px;
-  flex: 0 0 200px;
-  margin-left: 10px;
+input, label {
+    float:left;
 }
         </style>
     </head>
@@ -79,22 +78,16 @@ input {
             <br>
             <div class="date"><label id="ttl">Tanggal lahir:</label>
             <input class="date"></div>
-            <p><b>Apa warna favoritmu?</b></p>
-            <select>
-                <option> Merah</option>
-                <option selected> Kuning</option>
-                <option> Hijau</option>            
-            </select>
             <br>
-            <p><b>Apa bahasa pemrograman yang sedang kamu pelajari?</b></p>
+          
             <input type="radio" id="html" name="fav_language" value="HTML">
             <label for="html">HTML</label>
             <input type="radio" id="css" name="fav_language" value="CSS">
             <label for="css">CSS</label>
             <input type="radio" id="JavaScript" name="fav_language" value="JavaScript">
             <label for="JavaScript">JavaScript</label>
-            <br>
-            <input type="submit" value="Submit">
+            <br> 
+            <br><input type="submit" value="Submit">
         </form>
     </main>
 
