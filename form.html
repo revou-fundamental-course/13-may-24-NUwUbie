@@ -15,32 +15,70 @@
                         margin-top: -35px}
                         font-family: Arial, sans-serif;
                     }
+            .name   {   input[type=text] {
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        border: 3px solid #ccc;
+                        -webkit-transition: 0.5s;
+                        transition: 0.5s;
+                        outline: none;}
+                        input[type=text]:focus {
+                        border: 3px solid #555;}
+                    }
+            .date   {   input [type=date] {
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        border: 3px solid #ccc;
+                        -webkit-transition: 0.5s;
+                        transition: 0.5s;
+                        outline: none;}
+                        input[type=text]:focus {
+                        border: 3px solid #555;}
+                    }
+                    label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+input {
+  height: 20px;
+  flex: 0 0 200px;
+  margin-left: 10px;
+}
         </style>
     </head>
-    <body>
-        <head>
-            <img src="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64094d8d2cd6f76495b733ea_fc%20logo.png" width="150">
-            <div class="topnav">
-                <table>
-                    <tr><td>Home</td>
-                        <td>My Profile</td>
-                        <td>Portofolio</td>
-                        <td>Message Us</td>
-                    </tr>
-                </table>
-              </div>
-         </head>
-        <hr class="solid">
-        <header>
-            <h1 style="font-family: Arial, Helvetica, sans-serif;">Form Belajar</h1>
-            <p style="font-family: Arial, Helvetica, sans-serif;">Ini adalah website latihan pertama</p>
-        </header>
+     <body>
+            <head>
+                <img src="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64094d8d2cd6f76495b733ea_fc%20logo.png" width="150">
+             <div class="topnav">
+                    <table>
+                     <tr><td>Home</td>
+                         <td>My Profile</td>
+                         <td>Portofolio</td>
+                         <td>Message Us</td>
+                       </tr>
+                    </table>
+                  </div>
+             </head>
+         <hr class="solid">
+            <header>
+             <h1 style="font-family: Arial, Helvetica, sans-serif;">Form Belajar</h1>
+             <p style="font-family: Arial, Helvetica, sans-serif;">Ini adalah website latihan pertama</p>
+            </header>
+    <main>
         <form action="https://google.com/" method="get">
-            <label for="name">Nama :</label>
-            <input id="name" type="text" />
+            <div class="name"><label style="font-family: Arial, Helvetica, sans-serif;" 
+                for="name">Nama :</label>
+            <input id="name" type="text" placeholder="Nama"/>
+            </div>
             <br>
-            <label id="umur">Umur:</label>
-            <input id="umur" type="number" min="1" max="20">
+            <div class="date"><label id="ttl">Tanggal lahir:</label>
+            <input class="date"></div>
             <p><b>Apa warna favoritmu?</b></p>
             <select>
                 <option> Merah</option>
@@ -58,5 +96,7 @@
             <br>
             <input type="submit" value="Submit">
         </form>
-    </body>
+    </main>
+
+</body>
 </html>
