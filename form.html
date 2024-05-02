@@ -12,8 +12,10 @@
                         text-align: center;
                         border-collapse: collapse; 
                         float: right;
-                        margin-top: -35px}
                         font-family: Arial, sans-serif;
+                        flex-direction: row;
+                        margin-top: -35px;
+                    }
                     }
             .name   {   input[type=text] {
                         padding: 4px 5px;
@@ -40,7 +42,7 @@
                         border: 3px solid #555;}
                     }
 label {
-    width: 80px;
+    width: 100px;
     clear:left;
     text-align:right;
     padding-right:10px;
@@ -53,13 +55,13 @@ input, label {
     </head>
      <body>
             <head>
-                <img src="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64094d8d2cd6f76495b733ea_fc%20logo.png" width="150">
+                <img style="flex-direction: row;" src="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64094d8d2cd6f76495b733ea_fc%20logo.png" width="150">
              <div class="topnav">
-                    <table>
-                     <tr><td>Home</td>
-                         <td>My Profile</td>
-                         <td>Portofolio</td>
-                         <td>Message Us</td>
+                    <table style="margin-right: 5%;">
+                     <tr><td width="300px">Home</td>
+                         <td width="300px">My Profile</td>
+                         <td width="300px">Portofolio</td>
+                         <td width="300px">Message Us</td>
                        </tr>
                     </table>
                   </div>
@@ -79,15 +81,8 @@ input, label {
             <div class="date"><label id="ttl">Tanggal lahir:</label>
             <input class="date"></div>
             <br>
-          
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label>
-            <input type="radio" id="JavaScript" name="fav_language" value="JavaScript">
-            <label for="JavaScript">JavaScript</label>
-            <br> 
-            <br><input type="submit" value="Submit">
+            <br>
+          <input type="submit" value="Submit" >
         </form>
     </main>
 
