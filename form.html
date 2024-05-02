@@ -30,7 +30,7 @@
                         input[type=text]:focus {
                         border: 3px solid #555;}
                     }
-            .date   {   input [type=date] {
+            .date   {   input{
                         margin: 8px 0;
                         border-radius: 4px;
                         box-sizing: border-box;
@@ -49,8 +49,7 @@ label {
 }
 
 input, label {
-    float:left;
-}
+    float:left}
         </style>
     </head>
      <body>
@@ -73,16 +72,16 @@ input, label {
             </header>
     <main>
         <form action="https://google.com/" method="get">
-            <div class="name"><label style="font-family: Arial, Helvetica, sans-serif;" 
-                for="name">Nama :</label>
+            <div class="name" id="labname"><label>Nama :</label>
             <input id="name" type="text" placeholder="Nama"/>
             </div>
             <br>
-            <div class="date"><label id="ttl">Tanggal lahir:</label>
-            <input class="date"></div>
+            <div class="date"><label id="ttl" style="padding-top: 9px;">Tanggal lahir:</label>
+            <input type="date" for="date" style="width: 175px"></div>
             <br>
             <br>
-          <input type="submit" value="Submit" >
+            <br>
+          <input type="submit" value="Submit" class="submitbtn" style="margin-left: 110px; width: 175px;">
         </form>
     </main>
 
