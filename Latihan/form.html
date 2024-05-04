@@ -46,23 +46,19 @@
                         input[type=text]:focus {
                         border: 3px solid #555;}
                     }
-label {
-    width: 100px;
-    clear:left;
-    text-align:right;
-    padding-right:10px;
-}
-
-input, label {
-    float:left
-}
-label {
-    font-family: Arial, Helvetica, sans-serif;
-}
+    label {
+        width: 100px;
+        clear:left;
+        text-align:right;
+        padding-right:10px;
+        font-family: Arial, Helvetica, sans-serif}
+    input, label {
+        float:left
+    }
     .tabel_nama_dll {
         display: flex;
         margin-left: 35%;
-        margin-top: -90px;
+        margin-top: -140px;
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
         border: gray;
@@ -81,8 +77,10 @@ label {
             padding-bottom: 17px;
             border-collapse:collapse;
             display: flexbox;
-
-
+             }
+        table, th, td {
+         border: 1px solid rgba(211, 211, 211, 0.616);
+            border-collapse: collapse;
         }
     
         
@@ -117,7 +115,10 @@ label {
             <input type="date" for="date" style="width: 175px"></div>
             <br>
             <br>
-            <br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br><br>
           <input type="submit" value="Submit" class="submitbtn" style="margin-left: 110px; width: 200px;">
         </form>
         <div class="tabel_nama_dll">
@@ -129,6 +130,14 @@ label {
             <th><b>Pesan</b></th>
             <th><b>Profile</b></th>
             <th><b>Delete</b></th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>December 10, 1815</td>
+            <td>Laki-laki</td>
+            <td>Belajar Buat Website</td>
+            <td><a href="google.com">Klik Disini</a></td>
+            <td>
         </tr>
         </table>
         </div>
