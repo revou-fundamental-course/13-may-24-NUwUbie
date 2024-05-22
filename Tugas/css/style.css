@@ -1,0 +1,21 @@
+h1, p {
+    text-align: center;
+    text-size-adjust:inherit;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    align-content: center;
+}
+
+.firstpage {
+    align-items: center;
+    display: flexbox;
+    min-width: 80%;
+}
+
+#navbtn {
+    align-content: center;
+}
