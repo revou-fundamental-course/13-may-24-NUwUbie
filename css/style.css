@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    margin-left: 40%;
+}
+
+header {
+    background-color:white;
+    color: black;
+    margin-top: 2%;
+}
+
+header h1 {
+    margin-top: 15%;
+
+}
+
+h2 {
+    margin-top: 22%;
+    padding: 30px 10px;
+    background-color: #3084bc;
+    color: white;
+    font-stretch: ultra-expanded;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.buttons, #buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button, .button, #button {
+    padding: 10px 15px;
+    background-color: #3084bc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button1 {
+    padding: 10px 500px;
+    background-color: #3084bc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button2 {
+    padding: 10px 486px;
+    background-color: white;
+    color: #3083bb;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #1a6191;
+}
+
+.button1:hover {
+    background-color: #1a6191;
+}
+
+.button2:hover {
+    background-color: #b9b9b9;
+}
+
+button:last-child, .button:last-child {
+    margin-right: 0;
+}
+
+#welcome {
+    text-align: center;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
